@@ -1,0 +1,36 @@
+/* Establece el contenedor flexible */
+.flex-container {
+    display: flex; /* Activa el modelo de flexbox para el contenedor, permitiendo la alineación y distribución flexible de los elementos hijos */
+    
+    flex-direction: column; /* Organiza los elementos hijos en una columna, es decir, de arriba hacia abajo (verticalmente) */
+    /*En cambio  flex-direction: row es por defecto y organiza los elementos horizontalmente; */
+    width: 70%; /* Establece el ancho del contenedor al 70% del ancho del elemento contenedor principal */
+    
+    max-width: 60rem; /* Limita el ancho máximo del contenedor a 60rem, independientemente del tamaño del contenedor principal */
+    
+    border: 5px solid #000; /* Añade un borde de 5 píxeles de grosor y color negro alrededor del contenedor */
+    
+    padding: 2em; /* Añade un relleno de 2em en todo el contorno del contenedor, creando espacio interior entre el borde y los elementos */
+  }
+  
+  /* Estilos para los elementos dentro del contenedor flexible */
+  .flex-item {
+    margin: 0.5rem; /* Añade un margen de 0.5rem alrededor de cada elemento, separándolos entre sí */
+    
+    border: 5px solid #aaa; /* Añade un borde de 5 píxeles de grosor y color gris claro (#aaa) alrededor de cada elemento */
+    
+    background-color: #000; /* Establece el fondo de cada elemento a color negro */
+    
+    color: #fff; /* Cambia el color del texto dentro de cada elemento a blanco */
+    
+    padding: 0.5em; /* Añade un relleno de 0.5em dentro de cada elemento, creando espacio entre el contenido y el borde del elemento */
+    
+    @media (min-width> 700px){
+        .flex-container{
+          flex-direction: row;
+        }
+
+    }
+
+}
+  
