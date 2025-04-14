@@ -1,0 +1,26 @@
+.flex-container {
+  display: flex;
+
+  width: 70%;
+  max-width: 60rem;
+  border: 5px solid #000;
+  padding: 2em;
+}
+
+.flex-item {
+  margin: 0.5rem;
+  border: 5px solid #aaa;
+  background-color: #d41919;
+  color: #fff;
+  padding: 0.5em;
+  
+}
+
+.flex-item:nth-child(3) {
+  background: steelblue;
+  order: 2;
+}
+.flex-item:nth-child(1) {
+  background: rgb(125, 0, 228);
+  order:2;
+}
