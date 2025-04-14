@@ -1,1 +1,2 @@
 Shift + control + m abren el modo responsivo en Firefox developer.
+Lo de order: 1; tener cuidado y ver bien si es una buena idea implementarlo porque es un poco confuso, pero igual lo que más importa es el orden que siga las div class o los contenedores en el html.
