@@ -1,0 +1,26 @@
+.flex-container {
+  display: flex;
+
+  width: 70%;
+  max-width: 60rem;
+  border: 5px solid #000;
+  padding: 2em;
+}
+
+.flex-item {
+  margin: 0.5rem;
+  border: 5px solid #aaa;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5em;
+  /*flex-grow: define cuánto 
+  puede crecer un elemento 
+  flexible cuando sobra espacio 
+  en el contenedor.*/
+  flex-grow: 3;
+}
+
+.flex-item:nth-child(3) {
+  flex-grow: 0;
+  background: steelblue;
+}

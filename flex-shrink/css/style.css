@@ -1,0 +1,30 @@
+.flex-container {
+  display: flex;
+
+  width: 70%;
+  max-width: 60rem;
+  border: 5px solid #000;
+  padding: 2em;
+}
+
+.flex-item {
+  margin: 0.5rem;
+  border: 5px solid #aaa;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5em;
+  width: 1000px;
+  /* flex-shrink: controla 
+  cuánto puede encogerse un 
+  elemento flexible (flex item)
+   dentro de un contenedor con 
+   display: flex, cuando el
+   espacio disponible no alcanza 
+   para todos.*/
+  flex-shrink: 1;
+}
+
+.flex-item:nth-child(3) {
+  flex-shrink: 2;
+  background: steelblue;
+}
