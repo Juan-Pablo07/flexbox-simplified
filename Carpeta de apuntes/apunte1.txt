@@ -1,4 +1,11 @@
 Shift + control + m abren el modo responsivo en Firefox developer.
+
 Lo de order: 1; tener cuidado y ver bien si es una buena idea implementarlo porque es un poco confuso, pero igual lo que más importa es el orden que siga las div class o los contenedores en el html.
-flex-grow: define cuánto puede crecer un elemento flexible cuando sobra espacio en el contenedor.
-flex-shrink: controla cuánto puede encogerse un elemento flexible (flex item) dentro de un contenedor con display: flex, cuando el espacio disponible no alcanza para todos.
+
+**flex-grow**: Actúa cuando sobra espacio → crece.
+
+**flex-shrink**: Actúa cuando falta espacio → se achica.
+
+flex-shrink:0; lo que hace es que no permite que cambie el tamaño del contenedor en modo responsivo
+un item flexible se define por su capacidad de crecer o hacerse mas pequeño en el modo responsivo
+min-width y max-width definen que tantos pixeles puede crecer o decrecer un elemento
