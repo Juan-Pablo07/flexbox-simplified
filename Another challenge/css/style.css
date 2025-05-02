@@ -1,0 +1,74 @@
+/* ///////////////
+   RESPONSIVE LAYOUT
+   ///////////////
+
+   1. At a viewport width of 32.5em
+      and bigger, .subscribe and 
+      .recent-episodes should go next to 
+      one another
+
+   2. They should both be equal in width
+      until .subscribe reaches a width
+      of 25rem, at which point it no longer
+      grows anymore, and .recent-episodes
+      continues to grow to take up the 
+      rest of the available space
+*/
+
+.subscribe-and-episodes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-block: 2rem;
+  }
+  
+  .subscribe,
+  .recent-episodes {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Estilos adicionales para mejorar visualmente */
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  
+  .card-description,
+  .card-host {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .episodes li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .episodes a {
+    color: #007f5f;
+    text-decoration: none;
+  }
+  
+  .episodes a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Layout responsive */
+  @media (min-width: 32.5em) {
+    .subscribe-and-episodes {
+      flex-direction: row;
+      gap: 1rem;
+    }
+  
+    .subscribe {
+      flex: 1 1 0;
+      max-width: 25rem;
+    }
+  
+    .recent-episodes {
+      flex: 1 1 auto;
+    }
+  }
+  
