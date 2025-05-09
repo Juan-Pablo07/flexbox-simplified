@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- General styling -->
+  <link rel="stylesheet" href="css/general-styling.css">
+
+  <!-- lesson specific CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>flex-grow flex-shrink and min and max widths</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <header class="page-header flow-content">
+        <h1 class="page-title">Grasscast</h1>
+        <p class="page-description text-primary">The best podcast about grass that you'll ever listen to</p>
+        <p>A podcast that covers all you’ll ever need to know about the amazing world of grass</p>
+      </header>
+      <div class="flex">
+        <section class="subscribe">
+          <div class="card bg-primary text-white flow-content">
+            <img src="img/podcast-cover-art.jpg" alt="grass with due on it" class="card-cover-image">
+            <h2 class="card-title">Grasscast</h2>
+            <p class="card-host">hosted by John Grassmith</p>
+            <p class="card-description">All you'll ever need to know about grass, all in one place</p>
+            <button class="btn">Subscribe</button>
+          </div>
+        </section>
+        <section class="recent-episodes">
+          <h2 class="section-title text-light">Recent Episodes:</h2>
+          <div class="episode-card flow-content">
+            <h3 class="episode-title">Episode #01: Grass in all it’s glory</h3>
+            <p class="episode-meta"><span class="text-light">by</span> John Grassmith <span class="text-light">on</span>
+              January 24, 2020</span></p>
+            <button class="btn">Listen Now</button>
+          </div>
+          <div class="episode-card flow-content">
+            <h3 class="episode-title">Episode #02: Giving grass the credit that it’s due</h3>
+            <p class="episode-meta"><span class="text-light">by</span> John Grassmith <span class="text-light">on</span>
+              January 25, 2020</span></p>
+            <button class="btn">Listen Now</button>
+          </div>
+          <div class="episode-card flow-content">
+            <h3 class="episode-title">Episode #03: When your grass start to act up and you just don’t know what to do
+              about
+              it</h3>
+            <p class="episode-meta"><span class="text-light">by</span> John Grassmith <span class="text-light">on</span>
+              January 26, 2020</span></p>
+            <button class="btn">Listen Now</button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  </main>
+</body>
+
+</html>

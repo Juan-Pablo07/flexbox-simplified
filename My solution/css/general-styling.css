@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap");
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* Set body defaults */
+body {
+  line-height: 1.5;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #222;
+
+  padding-bottom: 6rem;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.flow-content > * + * {
+  margin-top: var(--flow-spacing, 1em);
+}
+
+.container {
+  padding: 0 2em;
+  max-width: 78rem;
+  margin: 0 auto;
+}
+
+.page-title,
+.section-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.page-description {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.page-header {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-primary {
+  color: hsl(155, 97%, 24%);
+}
+
+.bg-primary {
+  background-color: hsl(155, 97%, 24%);
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.5em 1em;
+  color: #222;
+  background-color: #fff;
+  border: 1px solid #222;
+  border-radius: 0.25em;
+  font-weight: 700;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: hsl(155, 97%, 24%);
+  color: #fff;
+}
+
+.bg-primary .btn {
+  border: 0;
+}
+
+.bg-primary .btn:hover,
+.bg-primary .btn:focus {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.card {
+  padding: 2rem;
+}
+
+.recent-episodes {
+  background: hsl(0, 0%, 90%);
+}
+
+.recent-episodes > * {
+  margin: 2rem;
+}
+
+.episode-card + .episode-card {
+  margin-top: 3rem;
+}
+
+.episode-card:not(:last-child) {
+  padding-bottom: 3em;
+  border-bottom: 1px solid #555;
+}
+
+.card-cover-image {
+  width: 100%;
+  object-fit: cover;
+}
