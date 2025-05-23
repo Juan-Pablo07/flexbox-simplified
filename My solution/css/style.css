@@ -18,15 +18,26 @@
 .flex {
   display: flex;
   flex-direction: column;
+  align-items: stretch; /* Asegura igual altura en columna también */
 }
 
-.flex > * {
-  width: auto;
+.subscribe,
+.recent-episodes {
+  flex: 1 1 0;
+  width: 100%;
+}
+
+/* Estira el contenido verde */
+.subscribe .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 32.5em) {
   .flex {
     flex-direction: row;
+    align-items: stretch; /* Asegura igual altura entre hijos */
   }
 
   .subscribe {
