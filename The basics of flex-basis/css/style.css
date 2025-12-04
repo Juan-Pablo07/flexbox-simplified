@@ -1,0 +1,60 @@
+/* ///////////////
+   YOUR TASK
+   ///////////////
+
+  1.  Add a display: flex to .profile-card
+      but at small screens, .card__header
+      and .card__body should go next to
+      one another.
+  
+  2.  At a viewport width of 40em, .card__header
+      and .card__body should go next to one
+      another.
+
+  3.1 Below a viewport width of 40em,
+      .card__header should have a height
+      of 18rem.
+  3.2 Above that size, it should have a
+      width of 18rem. 
+  3.3 It should not shrink
+
+
+*/
+
+.profile-card {
+  max-width: 45rem;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1);
+  margin: 10rem auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card__header,
+.card__body {
+  padding: 2rem;
+}
+
+.card__header {
+  background-image: url("../img/flexible-joe.jpg");
+  background-color: hsl(24, 92%, 31%);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: cover;
+  color: #fff;
+
+  height: 18rem;   /* punto 3.1 */
+  flex-shrink: 0;  /* punto 3.3 */
+}
+
+/*  EL MEDIA QUERY VA AQUÍ DEBAJO */
+@media (min-width: 40em) {
+  .profile-card {
+    flex-direction: row;  /* punto 2 */
+  }
+
+  .card__header {
+    height: auto;    /* quitar altura fija en pantallas grandes */
+    width: 18rem;    /* punto 3.2 */
+  }
+}
